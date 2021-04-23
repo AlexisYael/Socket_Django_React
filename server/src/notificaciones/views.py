@@ -4,7 +4,7 @@ from django.shortcuts import render
 def index(request):
     return render(request, 'notificaciones/index.html',{})
 
-def room(request, room_name):
+def room(request, numero_usuario):
     return render(request, 'notificaciones/room.html', {
-        'room_name': room_name
+        'numero_usuario': numero_usuario
     })
